@@ -1,0 +1,68 @@
+:root {
+    --main-color: #29231e;
+    --secondary-color: #E3F0FF;
+    --tertiary-color: #5DAED4;
+    --main-font: "Playfair Display SC", serif;
+    --primary-font: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: var(--primary-font);
+    background: linear-gradient(to right bottom, var(--secondary-color), #FAFCFF);
+    height: 100vh; 
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+table { 
+    width: 100%;
+    background-color: var(--secondary-color); 
+    border-radius: 20px; 
+    box-shadow: 0px 25px 40px #1687d933; 
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td, th {
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--primary-font);
+}
+
+.edit-btn, .delete-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--primary-font);
+}
+
+.edit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 1rem;
+    }
+
+    td, th {
+        padding: .5rem;
+    }
+
+    .edit-btn, .delete-btn {
+        padding: 5px 10px;
+    }
+}
